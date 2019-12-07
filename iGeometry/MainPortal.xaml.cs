@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace iGeometry
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainPortal.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainPortal : NavigationWindow
     {
-        public MainWindow()
+        public MainPortal()
         {
             InitializeComponent();
         }
