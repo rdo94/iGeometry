@@ -5,51 +5,49 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:iGeometry"
         mc:Ignorable="d"
-        Title="LoginScreen" Height="450" Width="800">
-    <Grid ShowGridLines="False">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-        <StackPanel Grid.Row="0"
-                    Orientation="Vertical">
-            <Label Content="Username"
-                   FontSize="15"
-                   HorizontalAlignment="Center"
-                   Margin="0,50,0,0"/>
-            <TextBox x:Name="tbUser"
-                     Width="200"
-                     HorizontalAlignment="Center"/>
-            <Label Content="Password"
-                   FontSize="15"
-                   HorizontalAlignment="Center"
-                   Margin="0,50,0,0"/>
-            <PasswordBox x:Name="pbPassword"
-                         Width="200"
-                        HorizontalAlignment="Center"/>
-        </StackPanel>
-        <StackPanel Grid.Row="1"
-                    Orientation="Horizontal">
-            <Button x:Name="btnLogin"
+        Title="iGeometry" 
+        Height="624.408" 
+        Width="413.905"
+        MouseDown="Window_MouseDown"
+        SizeToContent="WidthAndHeight" 
+        VerticalAlignment="Center" 
+        HorizontalAlignment="Center" 
+        Background="#FF222431"
+        AllowsTransparency="True" 
+        WindowStyle="None">
+    <Grid>
+        <Image x:Name="iGeometryIcon" Height="64" Margin="175,10,175,550" Width="64" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\iGeometry.png"/>
+        <TextBox x:Name="tbEmail"
+                     Width="225"
+                     HorizontalAlignment="Center" Margin="118,157,71,440" Background="#FF1C1D23" Foreground="#FFFFFCFC" FontSize="14" BorderBrush="{x:Null}"/>
+        <Image Height="40" Width="40" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\user-default128x128.png" HorizontalAlignment="Left" Margin="51,150,0,434"/>
+        <PasswordBox x:Name="pbPassword"
+                         Width="225"
+                        HorizontalAlignment="Center" Margin="118,230,71,367" Background="#FF1C1D23" Foreground="#FFFCFFFF" MinWidth="7" SelectionOpacity="-1" BorderBrush="{x:Null}"/>
+        <Image Height="40" Width="40" HorizontalAlignment="Left" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\password-2-72673.png" Margin="51,217,0,367"/>
+        <Button x:Name="btnLogin"
                     Click="BtnLogin_Click"
-                    Content="Login"
+                    Content="Sign In"
                     FontSize="15"
                     Height="30"
-                    Margin="200,0,0,0"
-                    Width="100"/>
-            <Button x:Name="btnRegister"
+                    Margin="42,297,54,297" Foreground="Black" Background="#FF59C6F0"/>
+        <Button x:Name="btnRegister"
                     Click="BtnRegister_Click"
                     Content="Register"
                     FontSize="15"
                     Height="30"
-                    Margin="200,0,0,0"
-                    Width="100"/>
-            <Button x:Name="btnTest"
+                    Margin="42,365,54,229" Background="{x:Null}" Foreground="White" BorderBrush="#FFCFC6C6"/>
+        <Button x:Name="btnTest"
                     Click="BtnToMainPortal_Click"
-                    Content="Main Portal"
+                    Content="Main Portal (Debug)"
                     FontSize="15"
-                    Height="30"
-                    Width="100"/>
-        </StackPanel>
+                    Height="30" Margin="42,522,54,72" Foreground="White" Background="{x:Null}" BorderBrush="White"/>
+        <Label x:Name="lbTitle" Content="iGeometry" HorizontalAlignment="Left" Margin="152,87,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe Print" Background="{x:Null}" Foreground="#FF59C6F0" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="87,429,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\google.png"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="187,429,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\facebook.jpg"/>
+        <Image HorizontalAlignment="Left" Height="40" Margin="287,429,0,0" VerticalAlignment="Top" Width="40" Source="C:\Users\kyrie\OneDrive\Documents\Portfolio\C# Projects\iGeometry\Resources\github.png"/>
+        <Button Click="BtnExit_Click" Content="X" HorizontalAlignment="Left" Margin="363,10,0,0" VerticalAlignment="Top" Width="30" Background="{x:Null}" Foreground="White" Height="30" RenderTransformOrigin="1.233,0" FontFamily="Consolas" FontWeight="Bold" FontSize="20" BorderBrush="#FF59C6F0"/>
+        <Rectangle Fill="#FF59C6F0" HorizontalAlignment="Left" Height="2" Margin="118,189,0,0" VerticalAlignment="Top" Width="225"/>
+        <Rectangle Fill="#FF59C6F0" HorizontalAlignment="Left" Height="2" Margin="118,262,0,0" VerticalAlignment="Top" Width="225"/>
     </Grid>
 </Window>

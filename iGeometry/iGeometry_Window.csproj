@@ -102,5 +102,11 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\iGeometry_Model\iGeometry_Model.csproj">
+      <Project>{b6f9bd43-1d70-4e22-b149-b8be7a5a792b}</Project>
+      <Name>iGeometry_Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
